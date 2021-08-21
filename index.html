@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Macbook</title>
+	<!-- tailwind css  -->
+	<link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+</head>
+<body>
+	<main class="w-2/3 grid grid-cols-2 gap-8 mx-auto mt-8">
+		<section class="">
+			<div>
+				<img src="images/mac.png" alt="">
+			</div>
+		</section>
+		<section>
+			 <!-- Product introduction part -->
+			<div>
+				<h1 class="text-3xl font-bold "> Customize your Blue 24-inch <br> iMac with Apple M1 chip.</h1>
+				<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id earum amet debitis laboriosam ad, corrupti eaque nulla aliquid laudantium nesciunt quam unde labore. Inventore dolores architecto, ipsam sequi placeat corporis nihil quaerat delectus autem animi, labore atque recusandae nisi quia?</p>
+			</div>
+			
+			<!-- Memory part -->
+			<div class=" mt-5 d-inline-block"> 
+				<h4 class=" font-bold "> Memory</h4>
+				<button id="memory-btn-1" class="  rounded border-black-900 border-2 px-2"> 8GB unified memory</button>
+				<button id="memory-btn-2" class=" rounded border-black-900 border-2 px-2"> 16GB unified memory</button>
+			</div>
+
+			<!-- storage part -->
+			<div class=" mt-5  ">
+				<h4 class=" font-bold "> Storage</h4>
+				<button id="storage-btn-1" class=" rounded border-black-900 border-2 px-2 "> 256GB SSD storage</button>
+				<button id="storage-btn-2" class=" rounded border-black-900 border-2 px-2 "> 512GB SSD storage</button>
+				<button id="storage-btn-3" class=" rounded border-black-900 border-2 px-2 mt-1 "> 1TB SSD storage</button>
+			</div class=" mt-5 ">
+			<!-- delivery option part  -->
+			<div class=" mt-5 ">
+				<h4 class=" font-bold "> Chose your delivery option</h4>
+				<button id="delivery-btn-1" class="  rounded border-black-900 border-2 px-2"> Friday, aug 25 FREE Prime Delivery</button>
+				<button id="delivery-btn-2" class=" rounded border-black-900 border-2 px-2 mt-2">Friday, Aug 21 Delivery Charge $20 </button>
+			</div>
+			<div >
+			<div class="mt-6 w-50">
+				<div class="flex justify-between ">
+					<h4 class=" inline  font-bold">Best Price</h4>
+					<h4 class="inline font-bold mr-5">$1299</h4>
+				</div>
+				<div class="flex justify-between">
+					<h4 class=" inline  font-bold">Extra memory cost</h4>
+					<h4 class="inline font-bold mr-5">$ <span id="extra-memory-cost">0</span></h4>
+				</div>
+				<div class="flex justify-between">
+					<h4 class=" inline  font-bold">Extra storage cost</h4>
+					<h4 class="inline font-bold mr-5">$ <span id="extra-storage-cost">0</span></h4>
+				</div>
+				<div class="flex justify-between">
+					<h4 class=" inline  font-bold">Delivery charge</h4>
+					<h4 class="inline font-bold mr-5">$ <span id="delivery-charge">0</span></h4>
+				</div>
+				<hr class="   border-black border-1">
+				<div class="flex justify-between"> 
+					<h4 class=" inline  font-bold">Total Price</h4>
+					<h4 class="inline font-bold mr-5">$ <span id="total-price">1299</span></h4>
+				</div>
+			</div>
+			 <!-- promo code part -->
+			<div>
+				<h4 class="font-bold">Add Promo code</h4>
+				<input type="text" placeholder="enter code here" class=" border-2 rounded px-2" id="promo-code">
+				<button id="apply" class=" rounded bg-red-500 px-2 text-white">Apply</button>
+			</div>
+		</section>
+	</main>
+	<hr class=" w-2/3 mx-auto border-2 mt-4">
+	<!-- header and last total part -->
+	<header class=" w-2/3 mx-auto mt-4 mb-8">
+		<h2 class="font-bold text-3xl text-center">Total : $<span id="last-total">1299</span></h2>
+	</header>
+
+	<!-- javascript add -->
+	<script src="macbook.js"></script>
+</body>
+</html>
